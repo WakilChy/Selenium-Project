@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <parameter name="uname" value="demosalesmanager"/>
+  <parameter name="pwd" value="crmsfa"/>
+  <parameter name="url" value="http://www.leaftaps.com/opentaps/control/login"/>
+  <test thread-count="5" name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="parameterizationPractice.PR1TestCase">
+        <methods>
+          <include name="tastcase"/>
+          <include name="closeBrowser"/>
+          <include name="lounchBrowse"/>
+        </methods>
+      </class> <!-- parameterizationPractice.PR1TestCase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
